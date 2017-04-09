@@ -15,43 +15,30 @@
         
         <div class="maincontent">
           
+        <input type="text" id="codetext"/>
+        <button onclick="checkCoading()">Check</button>
+          <div id="show"></div>
            <script>
-             /* for(i=1;i<=10;i++){
+              function checkCoading(){
+                  var txt;
+                  var coading = document.getElementById("codetext").value;
+                  switch(coading){
+                      case "Java":
+                          txt = "I love Java";
+                          break; 
+                      case "PHP":
+                           txt = "I love PHP";
+                          break;
+                      case "C#":
+                          txt = "I love C#";
+                          break;
+                      default:
+                           txt = "I love Programming";
+                  }
                   
-                  document.write("2*"+i+"="+i*2+"<br>");
+                  
+                  document.getElementById("show").innerHTML=txt;
               }
-               */
-               
-               
-               /*var a=0;
-               while(true){
-                   if (a==10){break;}
-                   a++;
-                   document.write(a+"<br>");
-               }*/
-               
-               //Array Print
-/*              
-               var arry=["Green","red","Purple","Magento"];
-               
-               for(i in arry){
-               document.write(arry[i]+"<br>");
-               
-               }
-               
-               
-               
-               */
-               
-               
-               //Object Print
-               
-               var obj={a:1,b:2,c:3,d:4};
-               for (i in obj){
-                   
-                   document.write(obj[i]+"<br>");
-                   
-               }
                
                
                
