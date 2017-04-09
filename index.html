@@ -21,13 +21,22 @@
          
          
            <script>
-              var method1= document.getElementById("name").innerText;
-              var method2= document.querySelector("div").innerText;
-              var method3= document.querySelectorAll("div")[0].innerText;
-              var method4= document.getElementsByTagName("div")[0].innerText;
                
-              
-               document.write(method1+"<br/>"+method2+"<br/>"+method3+"<br/>"+method4);
+               function thiskeywordtest(){
+                   var a=500;
+                   this.x=300;
+                   this.y=400;
+                   this.z=function(){
+                       
+                       return this.x+this.y;
+                   }
+                   
+                   
+               }
+               var keytest= new thiskeywordtest();
+                   document.write(keytest.z());
+                   
+               
               
             </script>
             
